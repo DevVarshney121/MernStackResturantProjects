@@ -1,0 +1,20 @@
+.about-story-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 80px; }
+.about-story-image { position: relative; }
+.about-story-image::after { position: absolute; z-index: -1; content: ""; inset: 25px -22px -22px 25px; border: 1px solid var(--sage-dark); border-radius: 6px; }
+.about-story-image img { width: 100%; height: 480px; object-fit: cover; border-radius: 6px; }
+.about-story-copy h2, .contact-details h2, .contact-form h2, .auth-form-wrap h2 { margin: 0; font-family: var(--serif); font-size: clamp(33px, 4vw, 47px); font-weight: 500; line-height: 1.15; letter-spacing: -.03em; }
+.about-story-copy h2 em, .contact-details h2 em, .contact-form h2 em, .auth-form-wrap h2 em { color: var(--forest); }
+.about-story-copy > p:not(.eyebrow) { color: var(--muted); font-size: 13px; line-height: 1.9; }
+.about-signature { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
+.signature-mark { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: var(--sage); color: var(--forest); }
+.about-signature strong, .about-signature small { display: block; }
+.about-signature strong { font-family: var(--serif); font-size: 16px; }
+.about-signature small { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.values-section { background: #f4f2ea; }
+.values-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.value-card { padding: 26px 22px; border: 1px solid #e4e5d9; border-radius: 7px; background: #fffefa; }
+.value-icon { display: grid; width: 44px; height: 44px; place-items: center; margin-bottom: 23px; border-radius: 50%; background: var(--sage); color: var(--forest); }
+.value-card h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.value-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+@media (max-width: 900px) { .about-story-grid { gap: 45px; } .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .about-story-grid { grid-template-columns: 1fr; gap: 45px; } .about-story-image img { height: 350px; } .values-grid { grid-template-columns: 1fr; } }

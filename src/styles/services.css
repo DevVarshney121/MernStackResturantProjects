@@ -1,0 +1,14 @@
+.services-offerings { background: #f4f2ea; }
+.menu-note { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 25px 0 0; color: var(--muted); font-size: 11px; }
+.menu-note span { color: var(--orange); }
+.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.service-card { padding: 30px; border: 1px solid #e4e5d9; border-radius: 7px; background: #fffefa; }
+.service-icon { display: grid; width: 47px; height: 47px; place-items: center; margin-bottom: 22px; border-radius: 50%; background: var(--sage); color: var(--forest); }
+.service-card h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 22px; }
+.service-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
+.hours-strip { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 35px; padding: 20px; border-radius: 6px; background: var(--forest); color: #fff; }
+.hours-strip > svg { color: #e6ad83; }
+.hours-strip strong, .hours-strip small { display: block; }
+.hours-strip strong { font-size: 12px; }
+.hours-strip small { margin-top: 5px; color: #c5d0c2; font-size: 11px; }
+@media (max-width: 760px) { .service-grid { grid-template-columns: 1fr; } }
